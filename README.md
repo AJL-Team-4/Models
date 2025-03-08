@@ -24,5 +24,52 @@ b. Model Structure
 -  Unfreeze all layers to fine tune the model for 20 epochs
 - The overall accuracy is 58.9%
 
+### Model3
+a. Preprocessing
+- I choose to oversample data by label as a target variable in the oversampling function
+- I balance the dataset by generating fake images
+
+b. Model Structure
+- The model structure is the same as the model2
+- Unfreeze all layers to fine tune the model for 10 epochs
+- The overall accuracy is 54%
+
+### Model4
+a. Preprocessing
+- I choose to oversample data by a combination of skin color and label as a target variable in the oversampling function
+- Initially, I have 21 labels. After I combine the label with skin color, I get 34 labels
+- This new smapling idea can help me generate more fake data
+
+b. Model Structure
+- The model structure is the same as the model2
+- Unfreeze all layers to fine tune the model for 10 epochs
+- The overall accuracy is 55%
+
+### Model5
+a. Preprocessing
+- I choose to oversample data by a combination of skin color and label as a target variable in the oversampling function
+- Initially, I have 21 labels. After I combine the label with skin color, I get 34 labels
+- This new smapling idea can help me generate more fake data
+
+b. Model Structure
+- Since the preprocessing steps in model4 and model5 cannot build a better model, I decided to use the oversampled data to fine tune my model2
+- Unfreeze all layers to fine tune the model for 7 epochs
+- The overall accuracy is 61%
+
+### Model6
+a. Preprocessing
+- I choose to oversample data by a combination of skin color and label as a target variable in the oversampling function
+- Initially, I have 21 labels. After I combine the label with skin color, I get 34 labels
+- This new smapling idea can help me generate more fake data
+
+b. Model Structure
+- Model6 is gonna do the same thing as model5, but I am using data oversampled bya combination of skin color and label as a target variable in the oversampling function
+- I am goona use the fine-tuned model2 from model5
+- Unfreeze all layers to fine tune the model and decrease learning to 0.0001 from 0.0003 for 5 epochs
+- Unfreeze all layers to fine tune the model and decrease learning to 0.00005 from 0.0001 for 5 epochs
+- The overall accuracy is 64%
+
+
+
 
 
