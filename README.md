@@ -72,7 +72,7 @@ b. Model Structure
 ### Model7
 a. Preprocessing
 - The preprocessing step is a bit different from model6. I decided to throw all data into training and wanted model to learn more from minority classes.
-- I still did a little bit train test split 0.05. This just ensure I can set a smaller learning rate to my model6 by adpative learning rate function.
+- I still did a little bit train test split 0.05. This just ensure I can set a smaller learning rate to my model6 by adpative learning rate function. The validation data overlaps with some training images.
 - I oversampled the image data by only label
 
 b. Model Structure
