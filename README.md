@@ -69,6 +69,17 @@ b. Model Structure
 - Unfreeze all layers to fine tune the model and decrease learning to 0.00005 from 0.0001 for 5 epochs
 - The overall accuracy is 64%
 
+### Model7
+a. Preprocessing
+- The preprocessing step is a bit different from model6. I decided to throw all data into training and wanted model to learn more from minority classes.
+- I still did a little bit train test split 0.05. This just ensure I can set a smaller learning rate to my model6 by adpative learning rate function.
+- I oversampled the image data by only label
+
+b. Model Structure
+- Model7 is the same as model6.
+- I changed learning rate from 0.00005 to 3.4299999356335316e-07. 3.4299999356335316e-07 was achieved by many experiments.
+- I trained the model by 20 epochs and achieved a 66.9% accuracy.
+
 
 
 
